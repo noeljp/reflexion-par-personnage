@@ -1,9 +1,7 @@
 import openai
-from PIL import Image
 import os
 import base64
 import requests
-from io import BytesIO
 
 # Configuration de la clé API OpenAI
 openai.api_key = os.getenv("OPENAI_API_KEY")  # Ou remplace par ta clé directement (non recommandé en prod)
@@ -14,15 +12,15 @@ openai.api_key = os.getenv("OPENAI_API_KEY")  # Ou remplace par ta clé directem
 def preparer_contexte_reflexion(personnage, theme):
     prompt_system = (
         "Tu es un expert en analyse littéraire et philosophique."
-        " Ton objectif est de préparer un cadre de réflexion originale."
+        " Ton objectif est de préparer un cadre de réflexion."
     )
     prompt_user = (
         f"Le personnage suivant va réfléchir à ce thème : « {theme} ».\n"
         f"Personnage : {personnage}\n\n"
-        # "1. Analyse le style d'expression du personnage (ton, vocabulaire, références, rythme, etc.).\n"
-        # "2. Décris sa manière de penser (logique, métaphores, structure d'argumentation, etc.).\n"
-        # "3. Propose 3 axes de réflexion que ce personnage pourrait développer sur le thème.\n"
-        # "4. Donne quelques références ou images qu’il pourrait utiliser pour enrichir sa pensée.\n"
+        "1. Analyse le style d'expression du personnage (ton, vocabulaire, références, rythme, etc.).\n"
+        "2. Décris sa manière de penser (logique, métaphores, structure d'argumentation, etc.).\n"
+        "3. Propose 3 axes de réflexion que ce personnage pourrait développer sur le thème.\n"
+        "4. Donne quelques références ou images qu’il pourrait utiliser pour enrichir sa pensée.\n"
     )
     
     response = openai.ChatCompletion.create(
@@ -32,7 +30,7 @@ def preparer_contexte_reflexion(personnage, theme):
             {"role": "user", "content": prompt_user}
         ],
         temperature=0.7,
-        max_tokens=2000
+        max_tokens=1500
     )
     return response.choices[0].message.content.strip()
 
@@ -41,19 +39,20 @@ def generer_reflexion_ia(personnage, theme, elements_preparatoires, img_path):
         f"Personnage : {personnage}\n"
         f"Thème : {theme}\n"
         f"Contexte préparatoire :\n{elements_preparatoires}\n\n"
-        "{personnage} est dans une situation quotidienne, discute avec quelqu'un quand, soudaint\n" 
-        "il découvre {theme}.\n\n"
+        "Écris une réflexion approfondie comme si elle était rédigée par ce personnage."
+        " Adopte fidèlement son style, ses références, ses tournures d’esprit. "
+        "Structure la réflexion avec clarté et densité, comme un texte littéraire ou philosophique."
         f"Rédige en markdown avec l'image suivante : image.png comme référence visuelle au début.\n\n"
     )
     
     response = openai.ChatCompletion.create(
         model="gpt-4",
         messages=[
-            {"role": "system", "content": "Tu es {personnage}. Tu rédiges un dialogue doncs le lexique et l'élocance' sont ceux de {personnage}."},
+            {"role": "system", "content": "Tu es le personnage. Tu rédiges un dialogue personnelle et stylisée."},
             {"role": "user", "content": prompt}
         ],
         temperature=0.8,
-        max_tokens=2000
+        max_tokens=1000
     )
     return response.choices[0].message.content.strip()
 
@@ -98,7 +97,7 @@ if __name__ == "__main__":
     
         personnage = p
 
-        prompt = """l'intelligence artificielle"""
+        prompt = """Lors d'une situation quotidienne,tu découvres l'intelligence artificielle et tu te demandes ce que cela signifie."""
 
         #cree un dossier pour le stockage des fichiers du personnage
         os.makedirs(personnage, exist_ok=True)
@@ -124,15 +123,8 @@ if __name__ == "__main__":
         image_url = generer_image_ia(personnage, prompt)
         image_response = requests.get(image_url)
 
-        # Ouvrir l'image avec PIL
-        img = Image.open(BytesIO(image_response.content))
-
-        # Calculer les nouvelles dimensions (2x plus petit en largeur et hauteur)
-        new_size = (img.width // 4, img.height // 4)
-        img_resized = img.resize(new_size)
-
-        # Enregistrer l'image redimensionnée
-        img_resized.save(image_path)
+        with open(image_path, "wb") as img_file:
+            img_file.write(image_response.content)
         print(f"Image enregistrée sous : {image_path}")
         print(f"Image générée : {image_url}")
 
