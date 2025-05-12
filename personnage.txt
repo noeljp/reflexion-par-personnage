@@ -1,9 +1,19 @@
-Jean-Jacques Rousseau
-Karl Marx
-Charles Darwin
-Albert Einstein
-Alan Turing
-Bouddha (Siddhartha Gautama)
-Jésus de Nazareth
-Prophète Mohammed
-Napoléon Bonaparte
+1. Professeur Alfred Turing - Un professeur d'informatique qui a consacré sa vie à l'étude de l'intelligence artificielle et de son impact sur la société.
+
+2. Dr. Sophia Kierkegaard - Une philosophe contemporaine qui se spécialise dans les implications éthiques et morales du progrès technologique.
+
+3. Edgar Orwell - Un auteur de science-fiction qui explore les futurs dystopiques créés par la dépendance excessive à la technologie.
+
+4. Mademoiselle Ada Lovelace - Une mathématicienne et informaticienne du 19ème siècle, souvent reconnue comme la première programmeuse informatique.
+
+5. Baron Karl Popper - Un philosophe de la science qui questionne l'objectivité et la vérifiabilité du progrès scientifique et technologique.
+
+6. Capitaine Nemo - Un ingénieur maritime fictif de Jules Verne, qui représente les prouesses et les dangers de la technologie du 19ème siècle.
+
+7. Ray Kurzweil - Un futuriste contemporain qui prédit l'avenir de l'humanité dans un monde de plus en plus dominé par la technologie.
+
+8. Isaac Asimov - Un auteur de science-fiction qui a formulé les trois lois de la robotique et qui a souvent exploré les relations entre l'homme et la machine.
+
+9. Elon Musk - L'entrepreneur technologique actuel, fondateur de SpaceX et de Tesla, qui se consacre à l'avancement de la technologie pour le bénéfice de l'humanité.
+
+10. Mary Shelley - L'auteur du 19ème siècle de "Frankenstein", qui a exploré les dangers potentiels de l'homme jouant à Dieu avec la technologie.
