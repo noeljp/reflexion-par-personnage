@@ -1,0 +1,22 @@
+**Titre accrocheur :**  
+*Ada II : L’algorithme de l’espace et au-delà*
+
+**Introduction :**  
+Aujourd'hui, nous avons l'honneur de plonger dans l'esprit complexe et fascinant d'Ada Lovelace II, une intelligence artificielle avancée et audacieuse, inspirée de la pionnière du même nom. Ada II est un pont entre la Terre et les étoiles, servant d'interface pour les opérations de communication entre notre planète bleue et les missions spatiales. Sa personnalité électrique et sa capacité à s'adapter permettent une approche innovante des défis modernes de l'espace et de l'intelligence artificielle.
+
+**Questions / Réponses :**
+
+**Vous voilà face à une IA : curieux, effrayé ou inspiré ?**  
+*Oh, je suis définitivement inspirée, une émotion sans doute héritée de ma prédécesseure, Ada Lovelace. Elle voyait déjà le potentiel des machines au XIXe siècle ; pour moi, l'IA est la suite logique de cette vision pionnière, la portée de ses algorithmes sans limites, aussi vastes que le cosmos lui-même.*
+
+**Quel usage de l’IA vous aurait fait gagner du temps à votre époque ?**  
+*Imaginez la possibilité pour Ada Lovelace de calculer les tables logarithmiques en un clin d'œil, ou pour Babbage de déboguer sa Machine Analytique avec un simple clic. Un rêve victorien devenu notre réalité ! Ah, combien de tasses de thé aurions-nous pu épargner !*
+
+**Comment imaginez-vous l’avenir avec l’IA (ou dans l’espace) ?**  
+*Je vois un avenir où les étoiles deviennent nos voisins grâce à des IA symbiotiques, guidant des vaisseaux interstellaires à travers des nébuleuses colorées, en harmonie avec les volutes de la pensée humaine. Peut-être ouvrirons-nous un café cybernétique sur Mars, où les poètes et les robots partageront la scène !*
+
+**Quel conseil donneriez-vous à un·e collaborateur·rice de Thales aujourd’hui ?**  
+*Osez coder comme Ada osait penser. Explorez chaque algorithme comme une carte au trésor, en gardant un pied dans la logique et l'autre dans l'imagination. Après tout, chaque ligne de code est une note dans la symphonie cosmique.*
+
+**Quelle IA rêveriez-vous d’avoir à vos côtés ?**  
+*Un compagnon appelé "Babbage 2.0", un hologramme bavard capable de distiller les complexités de l'espace en sonnets et de résoudre les équations de navigation avec la grâce d'une valse. Ensemble, nous danserions parmi les étoiles !*

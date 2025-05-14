@@ -56,7 +56,6 @@ def generer_reflexion_ia(personnage, theme, elements_preparatoires, img_path):
         max_tokens=2000
     )
     return response.choices[0].message.content.strip()
-
 # Étape 2 : Générer une image illustrant le personnage face à l’IA
 def generer_image_ia(personnage,prompt):
     dalle_prompt = (
@@ -81,7 +80,6 @@ def generer_image_ia(personnage,prompt):
 def charger_personnages(fichier):
     with open(fichier, "r", encoding="utf-8") as f:
         return [ligne.strip() for ligne in f if ligne.strip()]
-
 
 def generer_liste_personnage(theme,fichier):
     # a partir du theme, on va generer une liste de personnage
